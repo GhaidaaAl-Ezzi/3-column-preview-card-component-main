@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Lexend+Deca&display=swap');
+
+
+
+
+
+
+    @media screen and (min-width:375px){
+
+        :root{
+            --Bright-orange: hsl(31, 77%, 52%);
+            --Dark-cyan: hsl(184, 100%, 22%);
+            --Very-dark-cyan: hsl(179, 100%, 13%);
+            --transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs)*/
+            --Very-light-gray: hsl(0, 0%, 95%) /*(background, headings, buttons)*/
+            }
+            
+                *{
+                    font-family: 'Big Shoulders Display', cursive;
+                font-family: 'Fraunces', serif;
+                font-family: 'Lexend Deca', sans-serif;
+                }
+                
+                body{
+                    background-color: var(--Very-light-gray);
+                }
+                h2{
+                    text-align: left;
+                    font-family: 'Big Shoulders Display', cursive;
+                    font-size: 2em;
+                
+                }
+                p{
+                    font-size: 1em;
+                    font-family: 'Lexend Deca', sans-serif;
+                    color: var(--transparent-white);
+                    padding: 1em;
+                    text-align: left;
+                
+                }
+                .cards-container{
+                display:flex;
+                justify-content:center;
+                margin: 10em;
+                
+                
+                }
+                
+                .card{
+                height: 25em;
+                width:12em;
+                text-align: left;
+                font-family: 'Lexend Deca', sans-serif;
+                color:var(--Very-light-gray);
+                padding: 2em;
+                border-radius: 0.5em;
+                margin: -0.5em;
+                
+                
+                }
+                
+                .sedans{
+                    background-color: var(--Bright-orange);
+                
+                }
+                .SUVs{
+                    background-color: var(--Dark-cyan);
+                }
+                .Luxury{
+                    background-color: var(--Very-dark-cyan);
+                
+                }
+                
+                .button{
+                    background-color: var(--Very-light-gray);
+                    text-align: center;
+                    padding: 0.5em;
+                    margin:1em;
+                    border-radius: 1em;
+                }
+                
+                .sedans .button{
+                    color: var(--Bright-orange);
+                
+                }
+                
+                .SUVs .button{
+                    color: var(--Dark-cyan);
+                
+                }
+                .Luxury .button{
+                    color: var(--Very-dark-cyan);
+                
+                }
+                
+                .button:hover{
+                    background-color: var(--transparent-white);
+                }
+    }
+@media screen and (max-width:1044px) {
+
+    .cards-container{
+        display:grid;
+        justify-content:center;
+        margin: 10em;
+        
+        
+        }
+    
+}
